@@ -1,0 +1,13 @@
+En este ejercicio práctico se han incumplido al menos 3 principios SOLID:
+
+- Principio de Responsabilidad Única:
+
+- Principio Open/Closed:
+Se incumple este principio porque para relaizar modificaciones se han de modificar el resto de clases,
+además en dichas clases se pueden encontrar una gran cantidad de if los cuales dificultan la buena lectura
+del código. Por último, también he modificado los atributos a privados ya que no deberían ser públicos.
+
+- Principio de Sustitución de Liskov:
+Para solucionar este principio, he decidido eliminar la interfaz 'FileSystemItem' debido a que contenia
+múltiples métodos los cualesno eran realmente funcionales en dicha interfaz. Mi solución ha sido implementar
+los métodos en diferentes interfaces más pequeñas para así facilitar la lectura y entendimiento del código.
